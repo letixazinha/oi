@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>atividade01</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>Escreva seu nome e sobrenome:</p>
+
+  <input id="numb" type="text" placeholder="nome completo">
+
+  <button type="text" onclick="myFunction()">>></button>
+
+  <textarea id="primeiro" disabled></textarea>
+  <textarea id="sobrenome" disabled></textarea>
+
+  <script>
+    function myFunction() {
+      var input = document.getElementById("numb").value;
+      var nomeCompleto = input.split(" ");
+      document.getElementById("numb").value = "";
+      document.getElementById("primeiro").innerHTML = nomeCompleto[0];
+      document.getElementById("sobrenome").innerHTML = nomeCompleto[1];
+    }
+  </script>
+
+</body>
+
+</html>
